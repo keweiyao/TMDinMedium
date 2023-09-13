@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.19445.v1/t7					
+#: name: Table 7					
+#: description: Ratio of measured cross sections as a function of transverse momentum of the di-muon pair.					
+					
+#: data_file: Table7.yaml					
+#: keyword reactions: P BE --> MU+ MU- X | P FE --> MU+ MU- X | P WT --> MU+ MU- X | P NUCLEUS --> MU+ MU- X					
+#: keyword observables: SIG					
+#: keyword phrases: Inclusive | Integrated Cross Section | Cross Section | Di-Muon Production | Muon production					
+#: PLAB [GeV]			800		
+#: RE(Q=BE)			P BE --> MU+ MU- X		
+#: RE(Q=FE)			P FE --> MU+ MU- X		
+#: RE(Q=WT)			P WT --> MU+ MU- X		
+#PT(P=3_4) [GEV]	PT(P=3_4) [GEV] LOW	PT(P=3_4) [GEV] HIGH	SIG(Q=FE)/SIG(Q=BE)	error +	error -
+0.3247	0.0007	0.5	0.94048	0.01736	-0.01736
+0.7524	0.5	1	0.94299	0.0126	-0.0126
+1.2276	1	1.5	0.96657	0.0151	-0.0151
+1.7131	1.5	2	1.03203	0.02447	-0.02447
+2.2084	2	2.5	1.06238	0.04499	-0.04499
+2.7064	2.5	3	1.14854	0.09885	-0.09885
+3.3243	3	4	0.88405	0.10054	-0.10054
+					
+

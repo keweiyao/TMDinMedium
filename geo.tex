@@ -1,0 +1,50 @@
+\RequirePackage{luatex85}
+\documentclass[preview]{standalone}
+%\documentclass[amsmath]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[compat=1.1.0]{tikz-feynman}
+\usepackage{geometry,contour}
+\usetikzlibrary{patterns}
+\usepackage{graphics}
+\geometry{legalpaper, landscape, margin=0.0in}
+\paperheight 1.4in
+\paperwidth 2.5in
+\textwidth 3in
+\definecolor{ultramarine}{rgb}{.5,.5,.5}
+\usepackage{pgf}
+\pgfdeclareradialshading{sphere1}{\pgfpoint{0.2cm}{0cm}}% 
+{rgb(0cm)=(.8,.8,.8);
+rgb(0.6cm)=(0.3,0.3,.3); rgb(1cm)=(1,1,1); rgb(2cm)=(1,1,1)}
+\usetikzlibrary{decorations.pathreplacing}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay,scale=1.2, yshift=-.05in]
+\draw[circle, minimum width=3cm, very thick,opacity=.7] (2,-1.05) circle (1.cm);
+\begin{feynman}
+      \vertex[very thick, color=ultramarine, crossed dot,scale=.7] (H) at (1.5,-1-.4){};
+      \vertex (H1) at (4.5,-1-.4){};
+      \vertex (H2) at (2.3,-1-.4-.1){};
+      \vertex (H3) at (3.5,-0-.4){};
+      \vertex (S1) at (2.1,-.85-.4-.15);
+      \vertex (S2) at (2.1,-.1-.4-.15) {$t$};
+      \vertex(P) at(-.2,-1-.4);
+      \diagram* {
+       (P)--[photon, very thick](H);
+       (H) -- [fermion, very thick, color=ultramarine] (H1);
+       (H2) -- [gluon, very thick, color=ultramarine] (H3);
+       (S1)--[gluon, color=red!50, very thick] (S2);
+      };
+     \draw [decorate,decoration={brace,amplitude=5pt},xshift=0pt,yshift=0pt](2.9,-2.1) -- (1.5,-2.1) node [black,midway,yshift=-.35cm] {\footnotesize $L$};
+     \draw [decorate,decoration={brace,amplitude=3pt},xshift=0pt,yshift=0pt](.8,-1.35) -- (.8,-1.0) node [black,midway,xshift=-.23cm] 
+{\footnotesize $b$};
+\end{feynman}
+\end{tikzpicture}
+
+\end{document}
+
+
+
+
+
+

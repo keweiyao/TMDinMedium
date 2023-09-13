@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.19997.v1/t5			
+#: name: Table 5			
+#: description: Ratio of dimuon yield per nucleon for FE/H2.			
+			
+#: data_file: Table5.yaml			
+#: keyword reactions: P FE --> MU+ MU- X | P P --> MU+ MU- X | P NUCLEUS --> MU+ MU- X			
+#: keyword observables: SIG			
+#: keyword phrases: Inclusive | Integrated Cross Section | Cross Section | Proton-Proton Scattering | Di-Muon Production | Muon production			
+#: keyword cmenergies: 38.763			
+#: M(P=3_4) [GEV]	4 TO 9 + >= 11		
+#: PLAB [GeV]	800		
+#: RE(Q=FE)	P FE --> MU+ MU- X		
+#: RE(Q=H2)	P P --> MU+ MU- X		
+#: SQRT(S) [GeV]	38.763		
+#PT [GEV]	SIG(Q=FE)/SIG(Q=H2)	error +	error -
+0.32	0.987	0.012	-0.012
+0.75	0.967	0.009	-0.009
+1.22	0.983	0.011	-0.011
+1.71	1.013	0.018	-0.018
+2.2	1.09	0.035	-0.035
+2.7	1.109	0.062	-0.062
+

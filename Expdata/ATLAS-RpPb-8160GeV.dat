@@ -1,0 +1,22 @@
+#: table_doi: 10.17182/hepdata.88292.v1/t12							
+#: name: Table 12							
+#: description: Differential cross section for the DY process measured in the muon channel	 as a function of $p_{\textrm{T}}$ for $15<m_{\mu\mu}<60$ GeV. The quoted error is the quadratic sum of the statistical and systematic uncertainties. The global normalisation uncertainty of 3.5% is listed separately.						
+#: data_file: table_12.yaml							
+#: keyword observables: DSIG / DPT | NB							
+#: keyword phrases: Inclusive | Single Differential Cross Section | Drell Yan | Di-Muon Production | Rapidity Dependence							
+#: keyword cmenergies: 8160							
+#: keyword reactions: P PB --> Z0 <MU+ MU-> X | P PB --> GAMMA* <MU+ MU-> X							
+#: RAP_CM			> - 2.87				
+#: M [GeV]			> 15				
+#: RE			P PB --> Z0 <MU+ MU-> X	 P PB --> GAMMA* <MU+ MU-> X			
+#: SQRT(S)/NUCLEON [GeV]			8160				
+#pt [GeV]	pt [GeV] LOW	pt [GeV] HIGH	Cross section [nb]	Total +	Total -	global luminosity uncertainty +	global luminosity uncertainty -
+2.5	0	5	15	1.5	-1.5	0.5	-0.5
+7.5	5	10	10.2	1	-1	0.4	-0.4
+12.5	10	15	4.68	0.52	-0.52	0.16	-0.16
+17.5	15	20	2.41	0.27	-0.27	0.08	-0.08
+30	20	40	0.737	0.052	-0.052	0.026	-0.026
+55	40	70	0.0912	0.0091	-0.0091	0.0032	-0.0032
+90	70	110	0.0093	0.0025	-0.0025	0.0003	-0.0003
+155	110	200	0.00175	0.00051	-0.00051	6E-05	-6E-05
+
